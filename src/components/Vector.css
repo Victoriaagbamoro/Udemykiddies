@@ -13,11 +13,20 @@
     margin: auto;
 }
 
-.paravec{
+.paravecs{
     width: 80%;
+    margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
     font-size: 15px;
+}
+/* paragraph */
+.paravecsec{
+    font-size: 15.5px;
+    width: 70%;
+    margin: auto;
+    padding: 20px 15px ;
+
 }
 
 .grow{

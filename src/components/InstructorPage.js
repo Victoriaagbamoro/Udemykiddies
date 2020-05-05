@@ -46,9 +46,8 @@ function InstructorPage(props){
             props.history.push('/');
         }
     return(
-        
             <div className="InstructorPage">
-                <Logout logout={logout}/>
+                
                 <div className="jump">
                     <div >
                     <img className="write" src="https://i.ibb.co/RgJsBJk/loc.png" alt="doctor"></img>
@@ -110,7 +109,7 @@ function InstructorPage(props){
                     <div className="one">
                         <img className="doctors" src="https://i.ibb.co/FXkjdy8/vec.jpg" alt="doctor"></img>
                         <h3>Child Growth</h3>
-                        <p className="paravec">Our major focus is to see that every child grows to become all that they were
+                        <p className="paravecvec">Our major focus is to see that every child grows to become all that they were
                             made for to be and more.
                         </p>
                     </div>
@@ -118,17 +117,17 @@ function InstructorPage(props){
                     <div className="two">
                         <img className="doctors" src="https://i.ibb.co/C23RbwP/like.jpg" alt="doctor"></img>
                         <h3>Inspire Students</h3>
-                        <p className="paravec">Help people learn new skills, advance their careers, and explore their hobbies by sharing your knowledge.</p>
+                        <p className="paravecvec">Help people learn new skills, advance their careers, and explore their hobbies by sharing your knowledge.</p>
                     </div>
                     <div className="three">
                         <img className="doctors" src="https://i.ibb.co/C23RbwP/like.jpg" alt="doctor"></img>
                         <h3>Join Our Community</h3>
-                        <p className="paravec">Take advantage of our active community of instructors to help you through your course creation process.</p>
+                        <p className="paravecvec">Take advantage of our active community of instructors to help you through your course creation process.</p>
                     </div>
                     <div className="three">
                         <img className="doctors" src="https://i.ibb.co/y5YcFHB/bulb.png" alt="doctor"></img>
                         <h3>Light Up</h3>
-                        <p className="paravec">Take advantage of our active community of instructors to help you through your course creation process.</p>
+                        <p className="paravecvec">Take advantage of our active community of instructors to help you through your course creation process.</p>
                     </div>
                 </div>
                 
@@ -165,8 +164,11 @@ function InstructorPage(props){
                             <button className="btn" onClick={() => setModalOpen(false)}>Close</button>
                         </div>
                     </Modal> 
-                    
+                
                 </div>
+                <Logout logout={logout}/>
+
+                
                 
             </div>
     )

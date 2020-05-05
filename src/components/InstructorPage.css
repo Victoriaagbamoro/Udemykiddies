@@ -9,6 +9,7 @@
     height: 20%;
 }
 .jump{
+    margin-top: 10px;
     width: 90%;
     height: 35vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -67,7 +68,11 @@
 }
 .paracreate{
     color: #0b132b;
-    width: 75%;
+    width: 85%;
+}
+
+.paravecvec{
+    padding: 14px ;
 }
 
 /* speaker */
@@ -137,6 +142,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
     
 }
 
