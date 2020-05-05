@@ -1,0 +1,85 @@
+{
+    "CRk": [
+    {
+        "id": "1",
+        "Teacher": "Grace Byers",
+        "videoTitle": "Christain Religious Studies",
+        "publicId": "Victoria/gff5xavawd5qlrvempvw",
+        "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588360944/Victoria/gff5xavawd5qlrvempvw.mkv",
+        "videoLink": " http://res.cloudinary.com/victoria-agbamoro/video/upload/v1588360944/Victoria/gff5xavawd5qlrvempvw.mkv",
+        "tag": "Video"
+        
+    },
+
+    {
+        "id": "2",
+        "Teacher": "John Doe",
+        "videoTitle": "Maths/Science",
+        "publicId": "Victoria/gums7edfbg5uu7ldxac9",
+        "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588364935/Victoria/gums7edfbg5uu7ldxac9.mp4",
+        "videoLink": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588364935/Victoria/gums7edfbg5uu7ldxac9.mp4",
+        "tag": "Video"
+
+    },
+
+    {
+        "id": "3",
+        "Teacher": "Mercy Smith",
+        "videoTitle": "Music",
+        "publicId": "Victoria/gums7edfbg5uu7ldxac9",
+        "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588364935/Victoria/gums7edfbg5uu7ldxac9.mp4",
+        "videoLink": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588364935/Victoria/gums7edfbg5uu7ldxac9.mp4",
+        "tag": "Video"
+
+    },
+    {
+        "id":"4",
+        "Teacher": "Samuel Ikpati",
+        "videoTitle": "Biology/healthy life",
+        "publicId": "Victoria/pxyq9f266dtwevcyxe96",
+        "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588367042/Victoria/pxyq9f266dtwevcyxe96.mp4",
+        "videoLink": "http://res.cloudinary.com/victoria-agbamoro/video/upload/v1588367042/Victoria/pxyq9f266dtwevcyxe96.mp4",
+        "tag": "Video"
+    },
+    {
+        "id": "5",
+        "Teacher": "Dorcas Eze",
+        "videoTitle": "Arts",
+        "publicId": "Victoria/m0zeluookut2numpsxni",
+        "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588369843/Victoria/m0zeluookut2numpsxni.mkv",
+        "videoLink": "http://res.cloudinary.com/victoria-agbamoro/video/upload/v1588369843/Victoria/m0zeluookut2numpsxni.mkv",
+        "tag": "Video"
+    }
+],
+    "Maths":[
+        {
+            "id": "2",
+            "videoTitle": "Maths/Science",
+            "publicId": "Victoria/gums7edfbg5uu7ldxac9",
+            "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588364935/Victoria/gums7edfbg5uu7ldxac9.mp4",
+            "videoLink": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588364935/Victoria/gums7edfbg5uu7ldxac9.mp4",
+            "tag": "Video"
+
+        }
+    ],
+    "Biology":[
+        {
+            "id":"3",
+            "videoTitle": "Biology/healthy life",
+            "publicId": "Victoria/pxyq9f266dtwevcyxe96",
+            "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588367042/Victoria/pxyq9f266dtwevcyxe96.mp4",
+            "videoLink": "http://res.cloudinary.com/victoria-agbamoro/video/upload/v1588367042/Victoria/pxyq9f266dtwevcyxe96.mp4",
+            "tag": "Video"
+        }
+    ],
+    "Arts":[
+        {
+            "id": "4",
+            "videoTitle": "Arts",
+            "publicId": "Victoria/m0zeluookut2numpsxni",
+            "secureUrl": "https://res.cloudinary.com/victoria-agbamoro/video/upload/v1588369843/Victoria/m0zeluookut2numpsxni.mkv",
+            "videoLink": "http://res.cloudinary.com/victoria-agbamoro/video/upload/v1588369843/Victoria/m0zeluookut2numpsxni.mkv",
+            "tag": "Video"
+        }
+    ]
+}

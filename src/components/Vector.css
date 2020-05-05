@@ -1,0 +1,136 @@
+.doctor{
+    /* border-radius: 50%; */
+    height: 50%;
+    width: 40%;
+}
+
+.vector{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.paravec{
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: 15px;
+}
+
+.grow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.vectorSection{
+    width: 80%;
+}
+h3{
+    color: #0b132b;
+}
+
+/* .vectorSection{
+
+} */
+
+.imageDiv{
+    width: 100%;
+    height: 75vh;
+}
+
+.vectorsec{
+    margin-top: 1rem;
+}
+
+.instructVec{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #0b132b;
+    width: 65%;
+}
+
+.instructVecone{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.instructVectwo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+.testimony{
+    margin-top: 1.5rem;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+}
+
+.testi{
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+.name{
+    color: #ee2e31;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote{
+    color: #ee2e31;
+    font-weight: bolder;
+}
+
+.activity{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.act{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    .vector{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paravec{
+        width: 100%;
+    }
+
+}
+
+
+
+

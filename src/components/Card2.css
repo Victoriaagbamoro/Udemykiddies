@@ -1,0 +1,78 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    /* flex-direction: row; */
+}
+
+
+.cardbody {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 15px;
+}
+
+  .cardbody:hover{
+    background-color: #ebebeb;
+  }
+
+.maths{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mathsEnglish{
+    width: 90%;
+}
+
+.number{
+    color: grey;
+    font-size: 18px;
+}
+
+.paraone{
+    color: #0b132b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #ee2e31;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width: 700px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardbody {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        height: 75vh;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        margin: 30px 15px;
+        border: 1px solid #ebebeb;
+        border-radius: 15px;
+      }
+}
+

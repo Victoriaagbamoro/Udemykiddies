@@ -1,0 +1,36 @@
+.backgroundstage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #003049;
+    width: 80%;
+    height: 50vh;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.backstage{
+    background-color: #fff;
+    width: 90%;
+    height: 30vh;
+    padding: 12px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.player{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+    font-family: arial;
+    padding: 30px 15px;
+    color: #003049;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.player2{
+    margin-top: 1.5rem;
+    margin: 40px 15px;
+    
+}

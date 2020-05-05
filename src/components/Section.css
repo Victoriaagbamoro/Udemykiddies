@@ -1,0 +1,55 @@
+.instructsec{
+    margin-top: 3rem;
+}
+
+.sechead{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #fff;
+    width: 60%;
+}
+
+.secheading{
+    font-size: 26px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paraheading{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 90%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .sechead{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        color: #fff;
+        width: 100%;
+
+    }
+
+    .secheading{
+        font-size: 22px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .paraheading{
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80%;
+    }
+}

@@ -1,0 +1,61 @@
+.header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+    width: 65%;
+    margin: 0px 40px;
+}
+
+.head{
+    margin-top: 200px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.para{
+    font-size: 20px;
+    width: 50%;
+}
+
+input[type=text] {
+    float: left;
+    padding: 15px;
+    margin-top: 4px;
+    margin-right: 16px;
+    width: 50%;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+
+
+  @media screen and (max-width: 700px){
+    .header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    }
+    /* .main{
+        height: 65vh;
+    } */
+
+    .head{
+        width: 80%;
+        font-size: 22px;
+    }
+    .para{
+        width: 80%;
+        font-size: 18px;
+       
+    } 
+    
+    input[type=text]{
+        width: 70%;
+        margin-top: 10px;
+    }
+  }
