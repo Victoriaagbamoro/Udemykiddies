@@ -15,21 +15,21 @@ class StudentSignUp extends Component{
         
 
         }
-        this.signUp = this.signUp.bind(this);
+        // this.signUp = this.signUp.bind(this);
 
     }
-    signUp(res){
-        const googleresponse ={
-            Name: res.profileObj.name,
-            email: res.profileObj.email,
-            token: res.googleId,
-            Image: res.profileObj.imageUrl,
-            providerId: 'Google'
-        };
-        console.log(googleresponse)
-        this.props.history.push('/StudentDashboard');
+    // signUp(res){
+    //     const googleresponse ={
+    //         Name: res.profileObj.name,
+    //         email: res.profileObj.email,
+    //         token: res.googleId,
+    //         Image: res.profileObj.imageUrl,
+    //         providerId: 'Google'
+    //     };
+    //     console.log(googleresponse)
+    //     this.props.history.push('/StudentPage');
 
-    }
+    // }
     render(){
         
         const {responseGoogleForStudent} = this.props
@@ -40,13 +40,13 @@ class StudentSignUp extends Component{
                     <h2 className="instructone">{this.state.instructhead}</h2>
                     <div className="border"></div>
                     <p className="instructtwo">{this.state.instructpara}</p>
+                    {/* Local */}
                     {/* 265248569673-14o2h5fqpsn8ap2sq0dmpga4mibcrl29.apps.googleusercontent.com */}
+                    {/* Heroku */}
+                    {/* 265248569673-kvpkkmmhmisv7o6i0ipchog8db8144c4.apps.googleusercontent.com */}
                     <GoogleLogin
                     clientId="265248569673-kvpkkmmhmisv7o6i0ipchog8db8144c4.apps.googleusercontent.com"
-                    render={renderProps => (
-                    <button className="btne" onClick={renderProps.onClick} disabled={renderProps.disabled}>Sign in with Google</button>
-                    )}
-                    buttonText="Login"
+                    buttonText="Student Login"
                     onSuccess={responseGoogleForStudent}
                     onFailure={responseGoogleForStudent}
                     isSignedIn={true}

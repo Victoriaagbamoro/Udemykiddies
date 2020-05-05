@@ -14,6 +14,7 @@ import Logout from './Logout';
 function InstructorPage(props){
     const [images, setImages] = useState([])
 
+
     const beginUpload = tag => {
     const uploadOptions = {
         cloudName: "victoria-agbamoro",
@@ -38,13 +39,33 @@ function InstructorPage(props){
     const {register, handleSubmit} = useForm();
     const onSubmit = data =>{
         console.log(data)
+        fetch('https://udemykids.herokuapp.com/CRk', {
+            method: 'POST',
+            headers:{
+                Accept: 'data',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: 'data.name',
+                coursetitle: 'data.coursetitle',
+                description: 'data.description',
+                videoLink: 'videoLink',
+                publicId: 'data.publicId'
+
+            }),
+        })
     }
+    const [name, setName] = useState("");
+    const [coursetitle, settitle] = useState("");
+    const [description, setdescript] = useState("");
+    
     
     const [modalIsOpen, setModalOpen] = useState(false)
     
         const logout=()=>{
             props.history.push('/');
         }
+        
     return(
             <div className="InstructorPage">
                 
@@ -136,7 +157,7 @@ function InstructorPage(props){
                     <p className="textCenter">Are You Ready To Begin</p>
                 </div>
 
-                    <button className="btne" onClick={() => setModalOpen(true)}>Click To Create Your Course</button>
+                    <button className="btnn" onClick={() => setModalOpen(true)}>Click To Create Your Course</button>
                     <Modal className="modal" isOpen={modalIsOpen} 
                     shouldCloseOnOverlayClick={false}
                     onRequestClose={()=> setModalOpen(false)}
@@ -144,11 +165,11 @@ function InstructorPage(props){
                         <div>
                             <form className="formhandle" onSubmit={handleSubmit(onSubmit)}>
                                 <h1>Sign Up</h1>
-                                <input type="text" ref={register} name="firstName" placeholder="Name"/>
-                                <input type="text" ref={register} name="coursetitle" placeholder="Course Title"/>
-                                <input type="text" ref={register} name="description" placeholder="Description"/>
+                                <input type="text"  ref={register} name="name" value={name} onChange={e => setName(e.target.value)}  placeholder="Name"/>
+                                <input type="text"  ref={register} name="coursetitle" value={coursetitle} onChange={e => settitle(e.target.value)} placeholder="Course Title"/>
+                                <input type="text" ref={register} value={description} name="description" onChange={e => setdescript(e.target.value)} placeholder="Description"/>
                                 <CloudinaryContext cloudName="victoria-agbamoro">
-                                    <button className="clicks" onClick={() => beginUpload()}>Upload Video</button>
+                                    <button className="clicks" onClick={e => beginUpload(e.target.value)}>Upload Video</button>
                                     <ImageUpload/>
                                     {images.map(i => {
                                     console.log(i)
@@ -157,7 +178,7 @@ function InstructorPage(props){
                                     
                                 )})}
                                 </CloudinaryContext>
-                                <button  type="submit" className="btn">submit</button>
+                                <button type="submit" className="btn">submit</button>
                             </form>
                         </div>
                         <div>

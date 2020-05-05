@@ -12,7 +12,13 @@ class StudentPage extends Component{
             favorites: []
 
         }
+        this.helloThere = this.helloThere.bind(this);
     }
+
+    helloThere() {
+        alert('Added To Favorite');
+    }
+    
     async componentDidMount(){
         const url = 'https://udemykids.herokuapp.com/CRk';
         const response = await fetch(url);
@@ -39,15 +45,15 @@ class StudentPage extends Component{
                 <div className="player2"> 
                     {this.state.courses.map((post)=>{
                         return <div className="player" key={post.teacher}>
-                                <ReactPlayer className="" url={post.videoLink} controls width="100%" height="100%"/>
-                                <p>PublicId:{post.publicId}</p>
+                                <ReactPlayer className="reactplayer" url={post.videoLink} controls width="100%" height="100%"/>
+                                {/* <p>PublicId:{post.publicId}</p> */}
                                 <p>Teacher: {post.Teacher}</p>
                                 <p>Course Title: {post.videoTitle}</p>
                                 <p>1 hour on demand video</p>
                                 <p>Full time access</p>
                                 <p>Certification of completion</p>
                                 <StarRating/>
-                                <button className="btne">Add to favorite</button>
+                                <button className="btne" onClick={this.helloThere}>Add to favorite</button>
 
                             </div>
                     })}
