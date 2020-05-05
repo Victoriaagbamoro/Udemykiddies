@@ -56,7 +56,7 @@ function InstructorPage(props){
                         <p className="jumpara">Jump Into Course Creation</p> 
                     </div>
                     <div>
-                        <button className="btn" onClick={() => beginUpload()}>Create your course</button> 
+                        <button className="btn">Scroll down to register</button> 
                     </div>
                 </div>
                 <div className="center">
