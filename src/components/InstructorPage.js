@@ -163,25 +163,26 @@ function InstructorPage(props){
                     onRequestClose={()=> setModalOpen(false)}
                     >
                         <div>
-                            <form className="formhandle" onSubmit={handleSubmit(onSubmit)}>
+                            <form className="formhandle">
                                 <h1>Sign Up</h1>
                                 <input type="text"  ref={register} name="name" value={name} onChange={e => setName(e.target.value)}  placeholder="Name"/>
                                 <input type="text"  ref={register} name="coursetitle" value={coursetitle} onChange={e => settitle(e.target.value)} placeholder="Course Title"/>
                                 <input type="text" ref={register} value={description} name="description" onChange={e => setdescript(e.target.value)} placeholder="Description"/>
-                                <CloudinaryContext cloudName="victoria-agbamoro">
-                                    <button className="clicks" onClick={e => beginUpload(e.target.value)}>Upload Video</button>
-                                    <ImageUpload/>
-                                    {images.map(i => {
-                                    console.log(i)
-                                    return (
-                                    <Video key={i} publicId={i} fetch-format="auto" quality="auto" controls={true} width="300px" />
-                                    
-                                )})}
-                                </CloudinaryContext>
                                 <button type="submit" className="btn">submit</button>
                             </form>
                         </div>
+                        <CloudinaryContext cloudName="victoria-agbamoro">
+                            <button className="clicks" onSubmit={handleSubmit(onSubmit)} onClick={e => beginUpload(e.target.value)}>Upload Video</button>
+                            <ImageUpload/>
+                            {images.map(i => {
+                            console.log(i)
+                            return (
+                            <Video key={i} publicId={i} fetch-format="auto" quality="auto" controls={true} width="300px" />
+                                    
+                            )})}
+                        </CloudinaryContext>
                         <div>
+
                             <button className="btn" onClick={() => setModalOpen(false)}>Close</button>
                         </div>
                     </Modal> 
