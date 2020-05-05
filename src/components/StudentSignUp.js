@@ -40,7 +40,7 @@ class StudentSignUp extends Component{
                     <h2 className="instructone">{this.state.instructhead}</h2>
                     <div className="border"></div>
                     <p className="instructtwo">{this.state.instructpara}</p>
-
+                    {/* 265248569673-14o2h5fqpsn8ap2sq0dmpga4mibcrl29.apps.googleusercontent.com */}
                     <GoogleLogin
                     clientId="265248569673-kvpkkmmhmisv7o6i0ipchog8db8144c4.apps.googleusercontent.com"
                     render={renderProps => (

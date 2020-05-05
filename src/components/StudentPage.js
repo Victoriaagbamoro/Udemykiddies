@@ -14,7 +14,7 @@ class StudentPage extends Component{
         }
     }
     async componentDidMount(){
-        const url = 'http://localhost:4001/CRk';
+        const url = 'https://udemykids.herokuapp.com/CRk';
         const response = await fetch(url);
         const data = await response.json();
         this.setState({courses: data})

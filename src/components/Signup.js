@@ -73,7 +73,7 @@ class Signup extends Component{
                     <div className="instructSec">
                     <h2 className="instructone">{this.state.instructhead}</h2>
                     <p className="instructtwo">{this.state.instructpara}</p>
-
+                    {/* 265248569673-14o2h5fqpsn8ap2sq0dmpga4mibcrl29.apps.googleusercontent.com */}
                     <GoogleLogin
                     className="your-custom-class"
                     clientId="265248569673-kvpkkmmhmisv7o6i0ipchog8db8144c4.apps.googleusercontent.com"
