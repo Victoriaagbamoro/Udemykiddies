@@ -76,7 +76,7 @@ class Signup extends Component{
 
                     <GoogleLogin
                     className="your-custom-class"
-                    clientId="265248569673-14o2h5fqpsn8ap2sq0dmpga4mibcrl29.apps.googleusercontent.com"
+                    clientId="265248569673-kvpkkmmhmisv7o6i0ipchog8db8144c4.apps.googleusercontent.com"
                     render={renderProps => (
                     <button className="btne" onClick={renderProps.onClick} disabled={renderProps.disabled}>Sign in with Google</button>
                     )}
